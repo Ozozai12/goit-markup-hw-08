@@ -1,6 +1,213 @@
-body {
-    color: #757575;
+:root {
+    --bcg-main-color: #FFFFFF;
+    --bcg-sec-color: #2F303A;
+    --bcg-third-color: #F5F4FA;
+    --studio-color: #2196F3;
+}
 
-    font-family: "Arial", sans-serif;
+body {
+    color: #212121;
+    background-color: var(--bcg-main-color);
+
+    font-style: normal;
+    letter-spacing: 0.03em;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Логотип */
+.link {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.first {
+    color: var(--studio-color);
+}
+
+.second {
+    color: #212121;
+}
+
+/* Общие стили списков */
+.nav-list, 
+.contacts-list,
+.advantage-list,
+.activity-list,
+.personnel-list,
+.address-list,
+.services-list,
+.services-photolist  {
+    list-style-type: none;  
+}
+
+/* Хедер */
+
+.navigation {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.navigation:hover,
+.navigation:focus,
+.address:hover,
+.address:focus {
+    color: var(--studio-color);
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+/* Герой */
+
+.hero-button {
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: var(--bcg-sec-color);
+}
+
+.hero-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--studio-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--bcg-main-color);
+    color: var(--studio-color);
+}
+
+/* Секция преимуществ */
+
+.advantage-header {
+    display: none;
+}
+
+.advantage-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.advantage-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #757575;
+}
+
+/* Секция "чем занимаемся" */
+
+.activity-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+/* Секция команды */
+
+.personnel {
+    background-color: var(--bcg-third-color);
+}
+
+.personnel-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.personnel-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.personnel-position {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #757575;
+}
+
+/* ПОРТФОЛИО */
+/* Фильтр услуг */
+
+.services-header {
+    display: none;
+}
+
+.services-button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: var(--bcg-third-color);
+}
+
+.services-button:hover,
+.services-button:focus {
+    background-color: var(--studio-color);
+    color: var(--bcg-main-color);
+}
+/* Услуги */
+
+.service-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.service-type {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #757575;
+}
+
+/* Футер */
+
+.second-foot {
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: var(--bcg-sec-color);
+}
+
+.place {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
