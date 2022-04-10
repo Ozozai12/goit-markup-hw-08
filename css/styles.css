@@ -17,10 +17,43 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Логотип */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section:not(:last-child) {
+    padding-bottom: 94px;
+}
+
 .link {
     text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Хедер и логотип */
 
 .logo {
     font-family: 'Raleway';
@@ -36,19 +69,37 @@ body {
     color: var(--main-text-color);
 }
 
-/* Общие стили списков */
-.nav-list, 
-.contacts-list,
-.advantage-list,
-.activity-list,
-.personnel-list,
-.address-list,
-.services-list,
-.services-photolist  {
-    list-style: none;  
+.head-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
-/* Хедер */
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+    
+}
+
+.nav-list .link {
+    display: block;
+    padding: 32px 0;
+}
+
+.nav-list .item:not(:last-child) {
+    display: block;
+    margin-right: 50px;
+}
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-list .item:not(:last-child) {
+    display: block;
+    margin-right: 50px;
+}
 
 .navigation {
     font-weight: 500;
@@ -78,13 +129,9 @@ body {
 /* ГЛАВНАЯ СТРАНИЦА */
 /* Герой */
 
-.hero-button {
-    font-family: Roboto;
-    cursor: pointer;
-}
-
 .hero {
     background-color: var(--bgc-sec-color);
+    text-align: center;
 }
 
 .hero-header {
@@ -94,7 +141,12 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--bgc-main-color);
-    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    margin-bottom: 30px;
+    width: 696px;
 }
 
 .hero-button {
@@ -104,8 +156,16 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    font-family: Roboto;
+    padding: 10px 32px;
+    margin-bottom: 200px;
+        
     color: var(--bgc-main-color);
     background-color: var(--studio-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    cursor: pointer;
 }
 
 .hero-button:hover,
@@ -116,13 +176,24 @@ body {
 
 /* Секция преимуществ */
 
-.advantage-header {
-    display: none;
+.advantage-list {
+    display: flex; 
+}
+
+.advantage-list .item {
+    display: block;
+    min-width: 270px;
+    padding-right: 30px;
+}
+
+.advantage-list .item:last-child {
+    padding-right: 0;
 }
 
 .advantage-name {
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .advantage-text {
@@ -137,6 +208,17 @@ body {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.activity-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activity-item {
+    display: block;
 }
 
 /* Секция команды */
@@ -145,31 +227,52 @@ body {
     background-color: var(--bgc-third-color);
 }
 
+.personnel-container {
+    background-color: var(--bgc-main-color);
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .personnel-header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.personnel-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personnel-list > .item > img {
+    margin-bottom: 30px;
 }
 
 .personnel-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .personnel-position {
     font-size: 16px;
     line-height: 1.2;
     color: var(--sec-text-color);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* ПОРТФОЛИО */
 /* Фильтр услуг */
-
-.services-header {
-    display: none;
-}
 
 .services-button {
     font-family: Roboto;
@@ -212,11 +315,19 @@ body {
     background-color: var(--bgc-sec-color);
 }
 
+.logo-footer {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
 .place {
     font-style: normal;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--bgc-main-color);
+
+    margin-bottom: 9px;
 }
 
 .address-footer {
@@ -224,5 +335,15 @@ body {
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer-info:not(:last-child) {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-info:last-child {
+    padding-bottom: 60px;
 }
 
