@@ -183,12 +183,12 @@ p, h1, h2, h3, h4 {
 
 .advantage-list {
     display: flex; 
+    justify-content: space-between;
 }
 
 .advantage-list .item {
     display: block;
-    min-width: 270px;
-    padding-right: 30px;
+    max-width: 270px;
 }
 
 .advantage-list .item:last-child {
