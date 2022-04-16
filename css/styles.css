@@ -158,16 +158,12 @@ img {
 }
 
 .icon-mail {
-    width: 16px;
-    height: 12px;
     fill: currentColor;
     margin-right: 10px;
     
 }
 
 .icon-phone {
-    width: 10px;
-    height: 16px;
     fill: currentColor;
     margin-right: 10px;
 }
@@ -255,11 +251,6 @@ img {
     align-items: center;
 
     margin-bottom: 30px;
-}
-
-.adv-icon {
-    width: 70px;
-    height: 70px;
 }
 
 .advantage-list .item:last-child {
@@ -355,13 +346,6 @@ img {
     fill: var(--icon-color);
 }
 
-.personnel-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
-    
-}
-
 .personnel-link:hover,
 .personnel-link:focus {
     background-color: var(--studio-color);
@@ -384,11 +368,6 @@ img {
     border-radius: 4px;
     justify-content: center;
     align-items: center;
-}
-
-.customer-icon {
-    width: 106px;
-    height: 60px;
 }
 
 .customer-link:hover,
@@ -561,12 +540,6 @@ img {
     
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--bgc-main-color);
-}
-
-.socials-icon {
-    display: block;
-    width: 20px;
-    height: 20px;
 }
 
 .socials-link:hover,
