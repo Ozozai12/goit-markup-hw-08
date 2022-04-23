@@ -53,7 +53,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-header">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button name="button" class="hero-button">Заказать услугу</button>
+            <button name="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         
@@ -105,9 +105,18 @@
             <div class="container">
             <h2 class="section-header">Чем мы занимаемся</h2>
                 <ul class="activity-list">
-                    <li class="activity-item"><img src="./images/box1.jpg" alt="Планшет с клавиатурой и алгоритм на листике" width="370"></li>
-                    <li class="activity-item"><img src="./images/box2.jpg" alt="Ноутбук и мобильный телефон в руках" width="370"></li>
-                    <li class="activity-item"><img src="./images/box3.jpg" alt="Планшет с цветовой гаммой в руках" width="370"></li>  
+                    <li class="activity-item">
+                        <img src="./images/box1.jpg" alt="Планшет с клавиатурой и алгоритм на листике" width="370">
+                        <div class="activity-overlay">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
+                    </li>
+                    <li class="activity-item">
+                        <img src="./images/box2.jpg" alt="Ноутбук и мобильный телефон в руках" width="370">
+                        <div class="activity-overlay">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
+                    </li>
+                    <li class="activity-item">
+                        <img src="./images/box3.jpg" alt="Планшет с цветовой гаммой в руках" width="370">
+                        <div class="activity-overlay">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
+                    </li>  
                 </ul>
             </div>    
         </section>
@@ -358,5 +367,18 @@
         </div>
         </div>    
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-button" data-modal-close>
+                <svg class="close-button-icon">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
