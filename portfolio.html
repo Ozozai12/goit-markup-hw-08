@@ -14,32 +14,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    <header class="header-border">
-        <div class="container head-container">
-            <nav class="nav-container">
-                <a href="./index.html" class="link"><span class="logo first">Web</span><span
-                        class="logo second">Studio</span></a>
-                <ul class="nav-list">
-                    <li class="item"><a href="./index.html" class="link navigation">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link navigation current">Портфолио</a></li>
-                    <li class="item"><a href="#" class="link navigation">Контакты</a></li>
+    <header>
+        <div class="container container--header">
+    
+            <nav>
+                <a href="./index.html" class="logo"><span class="logo__first-part">Web</span><span
+                        class="logo__second-part">Studio</span></a>
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts-list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link address-header">
+    
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
                         <svg class="icon-mail" width="16" height="12">
                             <use href="./images/icons.svg#mail"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link address-header">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
                         <svg class="icon-phone" width="10" height="16">
                             <use href="./images/icons.svg#phone"></use>
                         </svg>
@@ -52,161 +54,161 @@
 
     <main>
 
-        <!-- ФИЛЬТР УСЛУГ -->
+        <!-- Фильтр услуг -->
 
         <section class="section">
             <div class="container">
             <h1 class="visually-hidden">Услуги</h1>
-                <ul class="services-list">
-                    <li><button type="button" class="services-button">Все</button></li>
-                    <li><button type="button" class="services-button">Веб-сайты</button></li>
-                    <li><button type="button" class="services-button">Приложения</button></li>
-                    <li><button type="button" class="services-button">Дизайн</button></li>
-                    <li><button type="button" class="services-button">Маркетинг</button></li>
+                <ul class="filter">
+                    <li><button type="button" class="filter__button">Все</button></li>
+                    <li><button type="button" class="filter__button">Веб-сайты</button></li>
+                    <li><button type="button" class="filter__button">Приложения</button></li>
+                    <li><button type="button" class="filter__button">Дизайн</button></li>
+                    <li><button type="button" class="filter__button">Маркетинг</button></li>
                 </ul>
 
-                <!-- УСЛУГИ -->
+                <!-- Услуги -->
 
-                <ul class="services-photolist">
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                <ul class="services">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat1.jpg" alt="Технокряк" width="370">
-                            <div class="services-overlay">
-                                <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+                            <div class="services__overlay">
+                                <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
                             </div></div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Технокряк</h2>
-                                <p class="service-type">Веб-сайт</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Технокряк</h2>
+                                <p class="services__type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Постер New Orlean vs Golden Star</h2>
-                                <p class="service-type">Дизайн</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Постер New Orlean vs Golden Star</h2>
+                                <p class="services__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat3.jpg" alt="Ресторан Seafood" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Ресторан Seafood</h2>
-                                <p class="service-type">Приложение</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Ресторан Seafood</h2>
+                                <p class="services__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat4.jpg" alt="Проект Prime" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Проект Prime</h2>
-                                <p class="service-type">Маркетинг</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Проект Prime</h2>
+                                <p class="services__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat5.jpg" alt="Проект Boxes" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Проект Boxes</h2>
-                                <p class="service-type">Приложение</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Проект Boxes</h2>
+                                <p class="services__type">Приложение</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat6.jpg" alt="Inspiration has no Borders" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Inspiration has no Borders</h2>
-                                <p class="service-type">Веб-сайт</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Inspiration has no Borders</h2>
+                                <p class="services__type">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat7.jpg" alt="Издание Limited Edition" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Издание Limited Edition</h2>
-                                <p class="service-type">Дизайн</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Издание Limited Edition</h2>
+                                <p class="services__type">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat8.jpg" alt="Проект LAB" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Проект LAB</h2>
-                                <p class="service-type">Маркетинг</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Проект LAB</h2>
+                                <p class="services__type">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="service-item">
-                        <a href="#" class="link service-link">
-                            <div class="service-thumb">
+                    <li class="services__card">
+                        <a href="#" class="services__link">
+                            <div class="services__thumb">
                                 <img src="./images/feat9.jpg" alt="Growing Business" width="370">
-                                <div class="services-overlay">
-                                    <span class="service-overlay-descr">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                <div class="services__overlay">
+                                    <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
                                         исчерпывающие сведения о компании или частном лице.</span>
                                 </div>
                             </div>
-                            <div class="service-descr">
-                                <h2 class="service-name">Growing Business</h2>
-                                <p class="service-type">Приложение</p>
+                            <div class="services__meta">
+                                <h2 class="services__name">Growing Business</h2>
+                                <p class="services__type">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -217,60 +219,60 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-first-section">
-                <a href="./index.html" class="link logo-footer"><span class="logo first">Web</span><span
-                        class="logo second-foot">Studio</span></a>
+            <div class="footer-info">
+                <a href="./index.html" class="logo logo--footer"><span class="logo__first-part">Web</span><span
+                        class="logo__second-part--footer">Studio</span></a>
                 <address>
-                    <ul class="address-list">
-                        <li class="place footer-info">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="footer-info"><a href="mailto:info@devstudio.com"
-                                class="link address-footer">info@devstudio.com</a></li>
-                        <li class="footer-info"><a href="tel:+380961111111" class="link address-footer">+38 096 111 11
-                                11</a></li>
+                    <ul>
+                        <li class="footer-info__item footer-info__location ">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="footer-info__item"><a href="mailto:info@devstudio.com"
+                                class="footer-info__contacts">info@devstudio.com</a></li>
+                        <li class="footer-info__item"><a href="tel:+380961111111" class="footer-info__contacts">+38 096 111
+                                11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-second-section">
-                <span class="footer-point">ПРИСОЕДИНЯЙТЕСЬ</span>
-                <ul class="footer-socials">
-                    <li class="socials-item">
-                        <a href="#" class="socials-link">
-                            <svg class="socials-icon" width="20" height="20">
+            <div class="join">
+                <span class="footer-info__title">ПРИСОЕДИНЯЙТЕСЬ</span>
+                <ul class="join__socials">
+                    <li class="socials">
+                        <a href="#" class="socials__link socials__link--footer">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="socials-link">
-                            <svg class="socials-icon" width="20" height="20">
+                    <li class="socials">
+                        <a href="#" class="socials__link socials__link--footer">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="socials-link">
-                            <svg class="socials-icon" width="20" height="20">
+                    <li class="socials">
+                        <a href="#" class="socials__link socials__link--footer">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="socials-item">
-                        <a href="#" class="socials-link">
-                            <svg class="socials-icon" width="20" height="20">
+                    <li class="socials">
+                        <a href="#" class="socials__link socials__link--footer">
+                            <svg width="20" height="20">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-third-section">
-                <span class="footer-point">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
-                <form name="signup_form" autocomplete="on" novalidate>
+            <div class="subscribe">
+                <span class="footer-info__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
+                <form autocomplete="on" novalidate>
                     <label>
-                        <input class="subscription-input" type="email" name="subscription-email" placeholder="E-mail" />
+                        <input class="subscribe__input" type="email" name="subscribe-email" placeholder="E-mail" />
                     </label>
-                    <button class="submit-button" type="submit">Подписаться
-                        <svg class="submit-icon" width="24" height="24">
+                    <button class="button-blue button-blue--footer" type="submit">Подписаться
+                        <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#subscription"></use>
                         </svg>
                     </button>

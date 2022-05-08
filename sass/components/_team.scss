@@ -1,0 +1,42 @@
+.section--team {
+    background-color: $sec-light-color;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__card {
+        background-color: $main-light-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__card>img {
+        margin-bottom: 30px;
+    }
+
+    &__member {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        font-size: 16px;
+        line-height: 1.2;
+        color: $sec-text-color;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__socials {
+        @include centeredFlex();
+        margin-bottom: 30px;
+    }   
+}
