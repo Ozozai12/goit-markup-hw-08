@@ -21,11 +21,20 @@
     <header>
         <div class="container container--header">
     
+            <a href="./index.html" class="logo">
+                <span class="logo__first-part">Web</span><span class="logo__second-part">Studio</span>
+            </a>
+    
+            <button name="button" class="menu-burger" data-mobile-open>
+                <svg class="menu-burger__icon" width="40" heigth="40">
+                    <use href="./images/icons.svg#menu-burger"></use>
+                </svg>
+            </button>
+    
             <nav>
-                <a href="./index.html" class="logo"><span class="logo__first-part">Web</span><span
-                        class="logo__second-part">Studio</span></a>
                 <ul class="navigation">
-                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+                    <li class="navigation__item"><a href="./index.html"
+                            class="navigation__link">Студия</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a></li>
                     <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
                 </ul>
@@ -49,7 +58,9 @@
                     </a>
                 </li>
             </ul>
+    
         </div>
+    
     </header>
 
     <main>
@@ -70,10 +81,15 @@
                 <!-- Услуги -->
 
                 <ul class="services">
-                    <li class="services__card">
+                   <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat1.jpg" alt="Технокряк" width="370">
+                                <picture>
+                                    <source srcset="./images/feat1-desktop.jpg 1x, ./images/feat1-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat1-tablet.jpg 1x, ./images/feat1-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat1-mobile.jpg 1x, ./images/feat1-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat1-mobile.jpg" alt="Технокряк">
+                                </picture>
                             <div class="services__overlay">
                                 <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</span>
@@ -87,7 +103,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                <picture>
+                                    <source srcset="./images/feat2-desktop.jpg 1x, ./images/feat2-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat2-tablet.jpg 1x, ./images/feat2-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat2-mobile.jpg 1x, ./images/feat2-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat2-mobile.jpg" alt="Постер New Orlean vs Golden Star">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -103,7 +124,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat3.jpg" alt="Ресторан Seafood" width="370">
+                                <picture>
+                                    <source srcset="./images/feat3-desktop.jpg 1x, ./images/feat3-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat3-tablet.jpg 1x, ./images/feat3-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat3-mobile.jpg 1x, ./images/feat3-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat3-mobile.jpg" alt="Ресторан Seafood">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -119,7 +145,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat4.jpg" alt="Проект Prime" width="370">
+                                <picture>
+                                    <source srcset="./images/feat4-desktop.jpg 1x, ./images/feat4-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat4-tablet.jpg 1x, ./images/feat4-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat4-mobile.jpg 1x, ./images/feat4-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat4-mobile.jpg" alt="Проект Prime">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -135,7 +166,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat5.jpg" alt="Проект Boxes" width="370">
+                                <picture>
+                                    <source srcset="./images/feat5-desktop.jpg 1x, ./images/feat5-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat5-tablet.jpg 1x, ./images/feat5-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat5-mobile.jpg 1x, ./images/feat5-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat5-mobile.jpg" alt="Проект Boxes">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -151,7 +187,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat6.jpg" alt="Inspiration has no Borders" width="370">
+                                <picture>
+                                    <source srcset="./images/feat6-desktop.jpg 1x, ./images/feat6-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat6-tablet.jpg 1x, ./images/feat6-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat6-mobile.jpg 1x, ./images/feat6-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat6-mobile.jpg" alt="Inspiration has no Borders">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -167,7 +208,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat7.jpg" alt="Издание Limited Edition" width="370">
+                                <picture>
+                                    <source srcset="./images/feat7-desktop.jpg 1x, ./images/feat7-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat7-tablet.jpg 1x, ./images/feat7-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat7-mobile.jpg 1x, ./images/feat7-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat7-mobile.jpg" alt="Издание Limited Edition">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -183,7 +229,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat8.jpg" alt="Проект LAB" width="370">
+                                <picture>
+                                    <source srcset="./images/feat8-desktop.jpg 1x, ./images/feat8-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat8-tablet.jpg 1x, ./images/feat8-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat8-mobile.jpg 1x, ./images/feat8-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat8-mobile.jpg" alt="Проект LAB">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -199,7 +250,12 @@
                     <li class="services__card">
                         <a href="#" class="services__link">
                             <div class="services__thumb">
-                                <img src="./images/feat9.jpg" alt="Growing Business" width="370">
+                                <picture>
+                                    <source srcset="./images/feat9-desktop.jpg 1x, ./images/feat9-desktop@2x.jpg 2x" media="(min-width: 1200px)" />
+                                    <source srcset="./images/feat9-tablet.jpg 1x, ./images/feat9-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                                    <source srcset="./images/feat9-mobile.jpg 1x, ./images/feat9-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                                    <img src="./images/feat9-mobile.jpg" alt="Growing Business">
+                                </picture>
                                 <div class="services__overlay">
                                     <span class="services__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                         сервисов. Все это позволит посетителю получить
@@ -212,62 +268,67 @@
                             </div>
                         </a>
                     </li>
+                    </div>
                 </ul>
             </div>
         </section>
     </main>
 
+    <!-- ФУТЕР -->
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-info">
-                <a href="./index.html" class="logo logo--footer"><span class="logo__first-part">Web</span><span
-                        class="logo__second-part--footer">Studio</span></a>
-                <address>
-                    <ul>
-                        <li class="footer-info__item footer-info__location ">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="footer-info__item"><a href="mailto:info@devstudio.com"
-                                class="footer-info__contacts">info@devstudio.com</a></li>
-                        <li class="footer-info__item"><a href="tel:+380961111111" class="footer-info__contacts">+38 096 111
-                                11 11</a></li>
+            <div class="tablet-container">
+                <div class="footer-info">
+                    <a href="./index.html" class="logo logo--footer"><span class="logo__first-part">Web</span><span
+                            class="logo__second-part--footer">Studio</span></a>
+                    <address>
+                        <ul>
+                            <li class="footer-info__item footer-info__location ">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="footer-info__item"><a href="mailto:info@devstudio.com"
+                                    class="footer-info__contacts">info@devstudio.com</a></li>
+                            <li class="footer-info__item"><a href="tel:+380961111111" class="footer-info__contacts">+38 096
+                                    111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="join">
+                    <span class="footer-info__title">ПРИСОЕДИНЯЙТЕСЬ</span>
+                    <ul class="join__socials">
+                        <li class="socials">
+                            <a href="#" class="socials__link socials__link--footer">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials">
+                            <a href="#" class="socials__link socials__link--footer">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials">
+                            <a href="#" class="socials__link socials__link--footer">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials">
+                            <a href="#" class="socials__link socials__link--footer">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div class="join">
-                <span class="footer-info__title">ПРИСОЕДИНЯЙТЕСЬ</span>
-                <ul class="join__socials">
-                    <li class="socials">
-                        <a href="#" class="socials__link socials__link--footer">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials">
-                        <a href="#" class="socials__link socials__link--footer">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials">
-                        <a href="#" class="socials__link socials__link--footer">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="socials">
-                        <a href="#" class="socials__link socials__link--footer">
-                            <svg width="20" height="20">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="subscribe">
                 <span class="footer-info__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
-                <form autocomplete="on" novalidate>
+                <form class="subscribe__form" autocomplete="on" novalidate>
                     <label>
                         <input class="subscribe__input" type="email" name="subscribe-email" placeholder="E-mail" />
                     </label>
@@ -280,6 +341,65 @@
             </div>
         </div>
     </footer>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    
+    <div class="mobile is-hidden" data-mobile>
+        <button name="button" class="mobile-close-button" data-mobile-close>
+            <svg>
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+    
+        <div class="mobile__container">
+            <nav>
+                <ul class="navigation-mobile">
+                    <li class="navigation-mobile__item">
+                        <a href="./index.html" class="navigation-mobile__link">Студия</a>
+                    </li>
+                    <li class="navigation-mobile__item">
+                        <a href="./portfolio.html" class="navigation-mobile__link navigation-mobile__link--current">Портфолио</a>
+                    </li>
+                    <li class="navigation-mobile__item">
+                        <a href="#" class="navigation-mobile__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div>
+                <ul class="contacts-mobile">
+                    <li class="contacts-mobile__item">
+                        <a href="tel:+380961111111" class="contacts-mobile__link contacts-mobile__link--phone">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="contacts-mobile__item">
+                        <a href="mailto:info@devstudio.com" class="contacts-mobile__link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="socials-mobile">
+                    <li class="socials-mobile__item">
+                        <a class="socials-mobile__link" href="#">Instagram</a>
+                    </li>
+                    <li class="socials-mobile__item">
+                        <a class="socials-mobile__link" href="#">Twitter</a>
+                    </li>
+                    <li class="socials-mobile__item">
+                        <a class="socials-mobile__link" href="#">Facebook</a>
+                    </li>
+                    <li class="socials-mobile__item">
+                        <a class="socials-mobile__link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>

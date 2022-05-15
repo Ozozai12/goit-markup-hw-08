@@ -22,14 +22,15 @@ a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
 address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
