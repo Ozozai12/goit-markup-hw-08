@@ -31,7 +31,8 @@
 
 @media (max-width:479px) {
     .customers {
-        align-items: center;
+        width: 210px;
+        margin: 0 auto;
     }
 
     .customers__item {
